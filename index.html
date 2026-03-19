@@ -29,6 +29,19 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/favicon-180_662cd084.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/favicon-192_2978e92b.png" />
     <meta name="theme-color" content="#1a0a00" />
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect handler
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
     <script type="module" crossorigin src="/PuriCore/assets/index-krCvRMLk.js"></script>
     <link rel="stylesheet" crossorigin href="/PuriCore/assets/index-Dc6XgkU0.css">
   </head>
