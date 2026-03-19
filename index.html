@@ -20,15 +20,40 @@
     <meta name="twitter:description" content="Crafting the world's finest e-liquid flavors since 2004. 160+ premium tobacco, dessert, fruit & beverage experiences." />
     <meta name="twitter:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/puricore-og-image-53wyN5Vo2SJwZDQtRnPdHy.png" />
     <meta name="twitter:image:alt" content="PuriCore — Essence of Food | Premium E-Liquid Flavors" />
+
+    <!-- DNS prefetch & preconnect for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://d2xsxph8kpxj0f.cloudfront.net" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-    <!-- Favicon: PuriCore brand logo icon -->
+
+    <!-- Google Fonts: non-blocking load (media=print trick) to avoid render blocking -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    </noscript>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/favicon-32_99e8985f.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/favicon-16_c1601e6a.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/favicon-180_662cd084.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663419893423/AahNXat3ACD4MVYQgKXXq4/favicon-192_2978e92b.png" />
     <meta name="theme-color" content="#21489D" />
+
+    <!-- Inline critical CSS: eliminates white flash before React hydrates -->
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { background: #0f1e4a; min-height: 100vh; }
+      body { color: #fff; font-family: system-ui, -apple-system, sans-serif; }
+      #root { min-height: 100vh; background: #0f1e4a; }
+    </style>
+
     <script type="text/javascript">
       // GitHub Pages SPA redirect handler
       (function(l) {
@@ -42,14 +67,16 @@
         }
       }(window.location));
     </script>
-    <script type="module" crossorigin src="/assets/index-tvUq2omp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-yQPxfV7G.css">
+    <script type="module" crossorigin src="/assets/index-BHEsXo4Q.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-COnpUsM8.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-CqpO1zVn.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-Cm7f5yPZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-Bgib0fUQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-router-D6NS7w-a.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-ui-CvmiPuqy.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BQLQhMAu.css">
   </head>
   <body>
     <div id="root"></div>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
 </html>
